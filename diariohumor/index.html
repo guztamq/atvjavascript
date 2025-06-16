@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diário do Humor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 Diário do Humor</h1>
+
+    <div id="boasVindas">
+      <label for="nomeUsuario">Digite seu nome:</label>
+      <input type="text" id="nomeUsuario" />
+      <button onclick="salvarNome()">Entrar</button>
+    </div>
+
+    <div id="painelHumor" style="display: none;">
+      <h2>Olá, <span id="nomeExibido"></span>! Como você está se sentindo hoje?</h2>
+
+      <div id="emojis">
+        <button onclick="selecionarEmoji('😄')">😄</button>
+        <button onclick="selecionarEmoji('😐')">😐</button>
+        <button onclick="selecionarEmoji('😢')">😢</button>
+        <button onclick="selecionarEmoji('😠')">😠</button>
+        <button onclick="selecionarEmoji('😴')">😴</button>
+      </div>
+
+      <label for="diaSelect">Qual dia da semana?</label>
+      <select id="diaSelect">
+        <option value="0">Domingo</option>
+        <option value="1">Segunda</option>
+        <option value="2">Terça</option>
+        <option value="3">Quarta</option>
+        <option value="4">Quinta</option>
+        <option value="5">Sexta</option>
+        <option value="6">Sábado</option>
+      </select>
+
+      <input type="text" id="motivo" placeholder="Por qual motivo o seu humor está assim?" />
+      <button onclick="salvarHumor()">Salvar humor diário</button>
+
+      <div class="progresso">
+        <div id="barraProgresso"></div>
+      </div>
+
+      <h3>Histórico da Semana:</h3>
+      <ul id="historico"></ul>
+
+      <h3>Humor predominante da semana:</h3>
+      <ul id="resumo"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
