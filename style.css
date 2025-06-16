@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0ffe0, #f0fff0);
+  color: #234123;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #ffffffdd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1e5d2a;
+}
+
+#emojis button {
+  font-size: 30px;
+  margin: 8px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+#emojis button.selecionado {
+  background-color: #a4edac;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #4caf50aa;
+}
+
+input, select {
+  padding: 8px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.progresso {
+  margin: 15px 0;
+  background: #ccc;
+  border-radius: 8px;
+  height: 20px;
+  overflow: hidden;
+}
+
+#barraProgresso {
+  background-color: #4caf50;
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s;
+}
+
+#historico li, #resumo li {
+  background: #eaffea;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 8px;
+}
